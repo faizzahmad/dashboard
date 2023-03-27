@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logorouteway{
+    width: 60%;
+   background-color: #241b68;
+    border-radius: 50px;
+    padding: 5px 10px;
+   
+}
+
+.dashboardsec{
+    width: 100%;
+    height: 100%;
+}
+
+.rw_sidebar{
+    width: 25%;
+    padding: 20px;
+    background-color: #37306B;
+   
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: 0.5s;
+   scrollbar-color: #373737;   
+   position: fixed;
+   left: 0%;
+   top: 0%;   
+  
+}
+
+.rw_sidebar::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  .rw_sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .rw_sidebar::-webkit-scrollbar-thumb {
+    background: #37306B;
+  }
+  
+
+
+.sidertopsec{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+   
+}
+
+.moonlogo{
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: auto;
+    transition: 0.5s;
+    cursor: pointer;
+    cursor: pointer;
+    
+}
+
+.moonlogo2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: auto;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+   
+}
+
+.userimage{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+}
+
+.usermainimg{
+    border-radius: 50%;
+}
+
+.usernamerw{
+    padding: 10px 20px 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.aboutuserinfo{
+    display: flex;
+    position: relative;
+}
+
+.h6classmain{
+  color: #b7b5b5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+  
+
+.mainhreading{
+    color: #b7b5b5;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.dashboardul{
+    padding-left: 0px;
+}
+
+.dashboardul>li{
+    list-style-type: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.dashboardlinks{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.dashboardicons{
+    color: #fff;
+
+}
+.dropdownchev{
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+
+.dashboardul>li:hover .dropdownchev{
+    transform: rotate(90deg);
+}
+
+.dorpdowninsideliul{
+    padding-top: 10px;
+    padding-left: 12px;
+    margin-bottom: 0px;
+    transition: 0.5s;
+}
+
+.dorpdowninsideliul>li{
+    list-style-type: none;
+    padding: 10px 0px;
+    transition: 0.5s;
+}
+
+.dorpdowninsideliul{
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.dashboardul>li:hover .dorpdowninsideliul{
+    height: auto;
+    overflow: visible;
+}
+
+
+.rightotleft{
+    float: right;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rightotleft:hover{
+    color: #fff;
+}
+
+
+.rw_dashboardmaincontent{
+
+   float: right;
+   width: 75%;
+   transition: 0.5s;
+}
+
+.maincontaiberdataserch{
+    padding: 10px;
+    background-color: #37306B;
+}
+
+.lablesearch{
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#searchbox{
+    padding: 0px 10px;
+    color: #373737;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+#searchbox::placeholder{
+    font-size: 10px;
+}
+
+.maincontentusername{
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    padding: 5px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.togglesidebar{
+    color: #373737;
+    text-transform: uppercase;
+    position: relative;
+    padding: 8px 20px 5px 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    transition: 0.7s;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .rw_sidebar{
+        width: 100%;
+    }
+
+    .rw_dashboardmaincontent{
+        width: 30%;
+        overflow-x: hidden;
+    }
+
+    .lablesearch{
+        display: none;
+    }
+
+    .maincontaiberdataserch{
+        height: 100px;
+    }
+
+    #searchbox{
+        padding: 3px 10px;
+    }
+}
